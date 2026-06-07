@@ -1,0 +1,57 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage[fontset=mac]{ctex}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\name{Kishin}
+
+\basicInfo{
+  \email{your-email@example.com} \textperiodcentered\
+  \phone{(+86) xxx-xxxx-xxxx} \textperiodcentered\
+  \github{https://github.com/Kishin} \textperiodcentered\
+  \homepage{https://kamlin.top}
+}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{中山大学} — 计算机科学与技术（本科）}{2024 -- 2028}
+\textit{中山大学计算机学院人工智能实验室 研究助理}（2024 年起，大一通过面试加入）
+
+\section{\faCode\ 项目经历}
+\datedsubsection{\textbf{GPT-SoVITS / Kokoro 角色语音管线}}{2025.05 -- 2025.06}
+\begin{itemize}
+  \item 构建全流程 TTS 合成管线，支持 3 语种（中/日/英）角色语音自动生成与多通道交付（iCloud/SCP），日均 API 成本 < \$0.0001
+  \item 集成 faster-whisper 完成日语语音转写与字幕生成（SRT/VTT），建立 ~100 条角色语料库
+  \item 跑通 KVoiceWalk 语音克隆训练管线，使用 Resemblyzer 实现 speaker embedding 混合评分
+  \item 通过 7 轮 PIPELINE Sprint 迭代交付，产出 10+ 份设计/审查文档
+\end{itemize}
+
+\datedsubsection{\textbf{中考英语词汇记忆手册（Wordbook）}}{2025.11 -- 至今}
+\begin{itemize}
+  \item 驱动 LLM（deepseek-v3 / qwen-max）完成 2000 词结构化解析与记忆法生成，经 Pandoc 出版流水线输出为 DOCX/PDF，已交付真实学生使用
+\end{itemize}
+
+\datedsubsection{\textbf{LNMP 博客部署 \& 基础设施自动化}}{2025.06}
+\begin{itemize}
+  \item 从零部署 LNMP 全栈环境，配置 Cloudflare CDN 隐藏源站 IP（Nginx return 444），排查并解决 ICP 备案导致的 SSL 握手问题
+  \item 设计 GNU Stow dotfiles 体系，将 Nginx / systemd / SSH 等 9 个配置包纳入版本管理，实现新机器一键恢复
+\end{itemize}
+
+\section{\faCogs\ 专业技能}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{语音 / AI：} TTS（GPT-SoVITS / Kokoro）、ASR（faster-whisper）、语音克隆（KVoiceWalk）、LLM 工程（deepseek / qwen / GPT-4o-mini）
+  \item \textbf{基础架构：} Linux / Nginx / Cloudflare（CDN / Tunnel / R2）/ MySQL / systemd / Python
+  \item \textbf{工程素养：} Git / GNU Stow / Pandoc / PIPELINE 迭代方法论
+\end{itemize}
+
+\section{\faHeartO\ 荣誉与证书}
+\datedline{广州合浦学会 2024 年度三等奖学金}{2024}
+\datedline{CET-6: 598 / CET-4: 644}{2025}
+
+\section{\faInfo\ 其他}
+\textbf{语言：} 中文（母语） / 英语（CET6-598） / 德语（A2） \quad
+\textbf{博客：} \href{https://kamlin.top}{kamlin.top}（建设中）
+
+\end{document}
